@@ -58,3 +58,6 @@ main {
 .btn:hover {
   background-color: #ad1457;
 }
+p{
+  text-align : center;
+}
