@@ -1,6 +1,9 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Import a clean Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #f9f9f9;
   padding: 20px;
   color: #333;
   text-align: center;
@@ -24,15 +27,14 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.script{
+.script {
   text-align: left;
   background: #f8f8f8;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
- 
   font-family: 'Courier New', monospace;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 30px;
 }
 
@@ -41,21 +43,34 @@ main {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  margin-bottom : 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  text-align: center;
 }
 
 .btn {
+  display: inline-block;
   padding: 12px 20px;
   background-color: #f935ac;
   color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin: 5px;
 }
 
 .btn:hover {
   background-color: #d03392;
-p{
-  text-align : center;
+  transform: translateY(-2px);
 }
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
